@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Izabayo — Portfolio</title>
+
+  <!-- ── FAVICON — grey circle with JI shown in browser tab ── -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+      <circle cx='32' cy='32' r='32' fill='%23d8d8d8'/>
+      <text x='32' y='38' text-anchor='middle'
+        font-family='Raleway,sans-serif' font-weight='900'
+        font-size='22' fill='%23111' letter-spacing='1'>JI</text>
+    </svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cur"      id="cur"></div>
+  <div class="cur-ring" id="crng"></div>
+
+  <!-- ══ NAVIGATION ══ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <!-- Circle badge with JI -->
+      <div class="logo-badge">
+        <div class="logo-badge-inner">JI</div>
+      </div>
+      <!-- Stacked wordmark -->
+      <div class="logo-wordmark">
+        <span class="logo-w1">Joseph</span>
+        <span class="logo-w2">Izabayo</span>
+      </div>
+    </a>
+
+    <ul class="nav-center" id="navC">
+      <li><a href="#about">About me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">My Work</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-cta">CONTACT ME</a>
+
+    <button
+      class="hamburger"
+      onclick="document.getElementById('navC').classList.toggle('open')"
+      aria-label="Open menu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-greeting">Hi, I am</p>
+      <h1 class="hero-name">Joseph Izabayo</h1>
+      <p class="hero-role">Web Developer / AI-Powered Designer</p>
+      <p class="hero-tagline">
+        Crafting clean, fast &amp; meaningful<br>digital experiences.
+      </p>
+      <div class="hero-socials">
+        <a href="mailto:izabayojoseph21@gmail.com" class="soc" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94"/></svg>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="soc" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/mynetwork/grow/" target="_blank" rel="noopener noreferrer" class="soc" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-cards">
+        <div class="hcard">
+          <div class="hcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h1m5 0h1M9 15h6"/></svg></div>
+          <div><div class="hcard-title">UI Design</div><div class="hcard-desc">Pixel-perfect interfaces built in Figma.</div></div>
+        </div>
+        <div class="hcard">
+          <div class="hcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+          <div><div class="hcard-title">Development</div><div class="hcard-desc">Clean HTML · CSS · JS on every device.</div></div>
+        </div>
+        <div class="hcard">
+          <div class="hcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div>
+          <div><div class="hcard-title">WordPress</div><div class="hcard-desc">Custom themes easy for you to manage.</div></div>
+        </div>
+        <div class="hcard">
+          <div class="hcard-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3"/><path d="M12 11v4M9 19h6M12 15l-3 4M12 15l3 4"/></svg></div>
+          <div><div class="hcard-title">AI-Powered</div><div class="hcard-desc">Faster delivery with Claude Code &amp; AI.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ME ══ -->
+  <section id="about">
+    <div class="s-head rev"><div class="s-box">ABOUT ME</div></div>
+    <p class="about-bio rev">
+      Building modern web applications with clean code and thoughtful design. Creating responsive
+      interfaces and reliable backend systems. Using AI tools to solve problems faster and develop smarter solutions.
+      Always learning new technologies and improving the way digital products are built.
+    </p>
+    <div style="text-align:center;" class="rev">
+      <a href="#portfolio" class="about-xplore">EXPLORE</a>
+    </div>
+    <div class="squig rev">— ~~~~ —</div>
+    <div class="services">
+      <div class="srv rev d1">
+        <div class="srv-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>DESIGN</div>
+        <p class="srv-text">I design clean, modern interfaces based on your needs and ideas. I can also create layouts from scratch and work closely with you to shape a clear and engaging user experience.</p>
+      </div>
+      <div class="srv rev d2">
+        <div class="srv-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>DEVELOPMENT</div>
+        <p class="srv-text">I build reliable and responsive web applications using modern technologies. I can develop projects from the ground up and collaborate with you to ensure the final product works smoothly.</p>
+      </div>
+      <div class="srv mid rev d3">
+        <div class="srv-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>MAINTENANCE</div>
+        <p class="srv-text">I keep websites running smoothly through updates, fixes, and improvements. I monitor performance, solve issues quickly, and ensure your site remains secure and reliable over time.</p>
+      </div>
+    </div>
+    <div class="squig rev" style="margin-top:48px;">— ~~~~ —</div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills">
+    <div class="s-head rev"><div class="s-box">SKILLS</div></div>
+    <div class="sk-group">
+      <div class="sk-label rev">USING NOW:</div>
+      <div class="sk-grid">
+        <div class="sk-card rev d1">
+          <div class="sk-icon"><img src="Skills Icon/html5.png" alt="HTML5" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">HTML5</span>
+        </div>
+        <div class="sk-card rev d2">
+          <div class="sk-icon"><img src="Skills Icon/css icon.png" alt="CSS3" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">CSS3</span>
+        </div>
+        <div class="sk-card rev d3">
+          <div class="sk-icon"><img src="Skills Icon/wordpress.png" alt="WordPress" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">WORDPRESS</span>
+        </div>
+        <div class="sk-card rev d4">
+          <div class="sk-icon" style="background:#F7DF1E;">
+            <svg viewBox="0 0 48 48"><path fill="#F7DF1E" d="M0 0h48v48H0z"/><path d="M26.2 36.8c.7 1.2 1.6 2 3.2 2 1.4 0 2.2-.7 2.2-1.6 0-1.1-.9-1.5-2.4-2.1l-.8-.4c-2.4-1-4-2.3-4-5 0-2.5 1.9-4.4 4.9-4.4 2.1 0 3.6.7 4.7 2.6l-2.6 1.7c-.6-1-1.1-1.4-2.1-1.4-.9 0-1.5.6-1.5 1.4 0 1 .6 1.4 2 2l.8.4c2.8 1.2 4.4 2.5 4.4 5.2 0 3-2.3 4.6-5.5 4.6-3.1 0-5-1.5-6-3.4zm-13 .3c.5.9 1 1.7 2.1 1.7 1.1 0 1.7-.4 1.7-2.1V25.7h3.2v11.1c0 3.5-2 5-4.9 5-2.6 0-4.2-1.4-5-3z"/></svg>
+          </div>
+          <span class="sk-name">JAVASCRIPT</span>
+        </div>
+        <div class="sk-card rev d1">
+          <div class="sk-icon" style="background:#24292e;">
+            <svg viewBox="0 0 24 24" fill="#fff" width="44" height="44"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </div>
+          <span class="sk-name">GITHUB</span>
+        </div>
+        <div class="sk-card rev d2">
+          <div class="sk-icon"><img src="Skills Icon/Claude Code.png" alt="Claude Code" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">CLAUDE CODE</span>
+        </div>
+        <div class="sk-card rev d3">
+          <div class="sk-icon">
+            <svg viewBox="0 0 48 48"><path fill="#F4511E" d="M42.2 22.1L25.9 5.8c-1-.9-2.7-.9-3.7 0L18.5 9.5l4.6 4.6c1-.3 2.2 0 3 .8.8.8 1.1 1.9.8 2.9L31.4 22c1-.3 2.1 0 2.9.8 1.1 1.1 1.1 2.9 0 4s-2.9 1.1-4 0c-.8-.8-1.1-2-.8-3.1l-4.3-4.3v11.3c.3.1.6.3.8.5 1.1 1.1 1.1 2.9 0 4s-2.9 1.1-4 0-1.1-2.9 0-4c.3-.3.6-.4.9-.6v-11.4c-.3-.1-.6-.3-.9-.6-1.1-1.1-1.1-2.9 0-4 .3-.3.6-.4.9-.5v-.5l-4.4-4.4-11.7 11.7c-1 1-1 2.7 0 3.7l16.3 16.3c1 1 2.7 1 3.7 0l16.1-16.1c1.1-.9 1.1-2.7.2-3.7z"/></svg>
+          </div>
+          <span class="sk-name">GIT</span>
+        </div>
+        <div class="sk-card rev d4">
+          <div class="sk-icon">
+            <svg viewBox="0 0 48 48"><path fill="#F24E1E" d="M16 24a8 8 0 0 1 8-8h8v8a8 8 0 0 1-8 8 8 8 0 0 1-8-8z"/><path fill="#FF7262" d="M24 8h8a8 8 0 0 1 0 16h-8z"/><path fill="#A259FF" d="M8 32a8 8 0 0 1 8-8h8v8a8 8 0 0 1-16 0z"/><path fill="#1ABCFE" d="M16 16a8 8 0 1 1 0 16z"/><path fill="#0ACF83" d="M8 16a8 8 0 0 1 8-8h8v16h-8a8 8 0 0 1-8-8z"/></svg>
+          </div>
+          <span class="sk-name">FIGMA</span>
+        </div>
+      </div>
+    </div>
+    <div class="sk-group">
+      <div class="sk-label rev">LEARNING:</div>
+      <div class="sk-grid">
+        <div class="sk-card rev d1">
+          <div class="sk-icon"><img src="Skills Icon/Nodejs.png" alt="Node.js" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">NODEJS</span>
+        </div>
+        <div class="sk-card rev d2">
+          <div class="sk-icon"><img src="Skills Icon/MySQL.png" alt="MySQL" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">MySQL</span>
+        </div>
+        <div class="sk-card rev d3">
+          <div class="sk-icon">
+            <svg viewBox="0 0 48 48"><path fill="#3776AB" d="M24.4 6C14.9 6 15.5 10.2 15.5 10.2l0 4.2h9.1v1.3H12.3S6 14.9 6 24.5s5.5 9.2 5.5 9.2h3.3v-4.4s-.2-5.5 5.4-5.5h9.3s5.2.1 5.2-5v-8.4S35.5 6 24.4 6zm-5.2 3.1c.9 0 1.7.8 1.7 1.7s-.7 1.7-1.7 1.7c-.9 0-1.7-.8-1.7-1.7s.8-1.7 1.7-1.7z"/><path fill="#FFC107" d="M24.6 43C34.1 43 33.5 38.8 33.5 38.8l0-4.2h-9.1v-1.3h12.3s6.3.8 6.3-8.8-5.5-9.2-5.5-9.2h-3.3v4.4s.2 5.5-5.4 5.5h-9.3s-5.2-.1-5.2 5v8.4S13.5 43 24.6 43zm5.2-3.1c-.9 0-1.7-.8-1.7-1.7s.7-1.7 1.7-1.7c.9 0 1.7.8 1.7 1.7s-.8 1.7-1.7 1.7z"/></svg>
+          </div>
+          <span class="sk-name">PYTHON</span>
+        </div>
+        <div class="sk-card rev d4">
+          <div class="sk-icon"><img src="Skills Icon/Flask.png" alt="Flask" style="width:54px;height:54px;object-fit:contain;"></div>
+          <span class="sk-name">FLASK</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ My Work ══ -->
+  <section id="portfolio">
+  <div class="port-hero">
+    <div class="port-hero-bg"></div>
+    <div class="port-hero-overlay">
+      <div class="s-box light">My Work</div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="port-tabs">
+    <button class="ptab on" onclick="filt('all', this)">ALL</button>
+    <button class="ptab" onclick="filt('coded', this)">CODED</button>
+    <button class="ptab" onclick="filt('designed', this)">DESIGNED</button>
+  </div>
+
+  <!-- Portfolio grid -->
+  <div class="port-grid" id="pg">
+
+    <!-- Live website project -->
+    <div class="port-item" data-c="coded">
+      <div class="port-bg c1"></div>
+      <div class="port-ov">
+        <div class="port-ov-inner">
+          <div class="port-cats">coded · designed</div>
+          <div class="port-pname">Caluem Tours</div>
+          <div class="port-acts">
+            <a href="https://caluem-tours.com" target="_blank" rel="noopener noreferrer" class="port-btn">DEMO</a>
+            <a href="#" class="port-btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image-only project -->
+    <div class="port-item" data-c="designed">
+      <div class="port-bg c2" style="background-image: url('forest-drive.jpg');"></div>
+      <div class="port-ov">
+        <div class="port-ov-inner">
+          <div class="port-cats">designed</div>
+          <div class="port-pname">Forest Drive</div>
+          <div class="port-acts">
+            <a href="#" class="port-btn">DEMO</a>
+            <a href="#" class="port-btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another live website -->
+    <div class="port-item" data-c="coded">
+      <div class="port-bg c3"></div>
+      <div class="port-ov">
+        <div class="port-ov-inner">
+          <div class="port-cats">coded</div>
+          <div class="port-pname">Neon Ring</div>
+          <div class="port-acts">
+            <a href="https://neon-ring.com" target="_blank" rel="noopener noreferrer" class="port-btn">DEMO</a>
+            <a href="#" class="port-btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Another image-only project -->
+    <div class="port-item" data-c="designed">
+      <div class="port-bg c4" style="background-image: url('night-ride.jpg');"></div>
+      <div class="port-ov">
+        <div class="port-ov-inner">
+          <div class="port-cats">designed</div>
+          <div class="port-pname">Night Ride</div>
+          <div class="port-acts">
+            <a href="#" class="port-btn">DEMO</a>
+            <a href="#" class="port-btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More projects as needed -->
+    <div class="port-item" data-c="coded">
+      <div class="port-bg c5"></div>
+      <div class="port-ov">
+        <div class="port-ov-inner">
+          <div class="port-cats">coded</div>
+          <div class="port-pname">Dark Hex</div>
+          <div class="port-acts">
+            <a href="https://dark-hex.com" target="_blank" rel="noopener noreferrer" class="port-btn">DEMO</a>
+            <a href="#" class="port-btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="port-item" data-c="designed">
+      <div class="port-bg c6" style="background-image: url('violet-web.jpg');"></div>
+      <div class="port-ov">
+        <div class="port-ov-inner">
+          <div class="port-cats">designed</div>
+          <div class="port-pname">Violet Web</div>
+          <div class="port-acts">
+            <a href="#" class="port-btn">DEMO</a>
+            <a href="#" class="port-btn">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <div class="s-head rev"><div class="s-box">CONTACT</div></div>
+    <p class="con-bio rev">
+      Feel free to reach out if you have a project, idea, or collaboration in mind.
+      I am always open to discussing new opportunities and creative solutions.
+      Send a message anytime and I will get back to you as soon as possible.
+      Let's build something great together.
+    </p>
+    <div class="squig rev">— ~~~~ —</div>
+    <form id="contact-form" action="https://formspree.io/f/xaqplnbo" method="POST" class="con-form rev">
+  
+  <input type="text" name="name" class="cf" placeholder="ENTER YOUR NAME*" required>
+  
+  <input type="email" name="email" class="cf" placeholder="ENTER YOUR EMAIL*" required>
+  
+  <input type="tel" name="phone" class="cf" placeholder="PHONE NUMBER">
+  
+  <textarea name="message" class="cf" placeholder="YOUR MESSAGE*" required></textarea>
+  
+  <div class="cf-sub">
+    <button type="submit" class="cf-submit">SUBMIT</button>
+  </div>
+
+</form>
+<p id="success-message" style="display:none; color: rgb(25, 26, 25);">
+   Message sent successfully!
+</p>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="ft-top">
+      <a href="#hero" class="backtop">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        BACK TO TOP
+      </a>
+    </div>
+    <div class="ft-socs">
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="ft-soc" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="https://www.linkedin.com/mynetwork/grow/" target="_blank" rel="noopener noreferrer" class="ft-soc" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="ft-soc" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      <a href="mailto:izabayojoseph21@gmail.com" class="ft-soc" title="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+    </div>
+    <p class="ft-copy">&copy; 2026 <strong>Joseph Izabayo</strong> — All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
